@@ -1,0 +1,12 @@
+[Unit]
+Description=Ludusavi Backup Service
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/deck/Scripts/ludusavi_service/run_ludusavi_backup.sh
+Environment=XDG_RUNTIME_DIR=/run/user/1000
+User=deck
+
+[Install]
+WantedBy=multi-user.target
