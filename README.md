@@ -3,7 +3,7 @@
 This is a systemd service for **Steam Deck** (should work on every linux distro with the flatpak Ludusavi installed), 
 which launches the command:
 ```
-com.mtkennerly.ludusavi backup --force
+com.github.mtkennerly.ludusavi backup --force
 ```
 on each game launch and close.
 

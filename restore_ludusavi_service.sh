@@ -24,6 +24,7 @@ systemctl daemon-reload
 echo "Enabling and starting ludusavi-backup service"
 systemctl enable ludusavi-backup.path
 systemctl start ludusavi-backup.path
+systemctl restart ludusavi-backup
 
 # Confirmation message
 echo "Service and script have been set up successfully."
